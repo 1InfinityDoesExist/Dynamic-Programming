@@ -9,11 +9,14 @@ public class MainClass {
 //		KnapsackProblem kp = new KnapsackProblem();
 //		System.out.println(kp.knapsack(val, wt, 7));
 
-		String str1 = "ABCDGHLQR";
-		String str2 = "AEDPHR";
+//		String str1 = "ABCDGHLQR";
+//		String str2 = "AEDPHR";
+//
+//		LongestCommonSubsequence lcs = new LongestCommonSubsequence();
+//		System.out.println(lcs.lcs(str1.toCharArray(), str2.toCharArray()));
 
-		LongestCommonSubsequence lcs = new LongestCommonSubsequence();
-		System.out.println(lcs.lcs(str1.toCharArray(), str2.toCharArray()));
+		SubSetSumProblem sb = new SubSetSumProblem();
+		System.out.println(sb.sub_set_sum_problem(new int[] { 2, 3, 7, 8 }, 11));
 	}
 
 }
