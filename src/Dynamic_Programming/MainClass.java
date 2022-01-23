@@ -1,5 +1,7 @@
 package Dynamic_Programming;
 
+import Category_1.CoinChaningProblem;
+
 public class MainClass {
 	public static void main(String[] args) {
 
@@ -15,8 +17,13 @@ public class MainClass {
 //		LongestCommonSubsequence lcs = new LongestCommonSubsequence();
 //		System.out.println(lcs.lcs(str1.toCharArray(), str2.toCharArray()));
 
-		SubSetSumProblem sb = new SubSetSumProblem();
-		System.out.println(sb.sub_set_sum_problem(new int[] { 2, 3, 7, 8 }, 11));
+//		SubSetSumProblem sb = new SubSetSumProblem();
+//		System.out.println(sb.sub_set_sum_problem(new int[] { 2, 3, 7, 8 }, 11));
+
+		int total = 11;
+		int coins[] = { 1, 5, 6, 8 };
+		CoinChaningProblem cc = new CoinChaningProblem();
+		System.out.println(cc.coinChaningProblem(coins, total));
 	}
 
 }
