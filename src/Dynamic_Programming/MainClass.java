@@ -1,6 +1,6 @@
 package Dynamic_Programming;
 
-import Category_1.CoinChaningProblem;
+import Category_2.EditDistanceProblem;
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -20,10 +20,16 @@ public class MainClass {
 //		SubSetSumProblem sb = new SubSetSumProblem();
 //		System.out.println(sb.sub_set_sum_problem(new int[] { 2, 3, 7, 8 }, 11));
 
-		int total = 11;
-		int coins[] = { 1, 5, 6, 8 };
-		CoinChaningProblem cc = new CoinChaningProblem();
-		System.out.println(cc.coinChaningProblem(coins, total));
+//		int total = 11;
+//		int coins[] = { 1, 5, 6, 8 };
+//		CoinChaningProblem cc = new CoinChaningProblem();
+//		System.out.println(cc.coinChaningProblem(coins, total));
+
+		String str1 = "azced";
+		String str2 = "abcdef";
+		EditDistanceProblem editDistance = new EditDistanceProblem();
+		int result = editDistance.editDistance(str2.toCharArray(), str1.toCharArray());
+		System.out.println(result);
 	}
 
 }
