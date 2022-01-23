@@ -1,4 +1,4 @@
-package Dynamic_Programming;
+package Category_1;
 
 import java.util.ArrayList;
 import java.util.List;
