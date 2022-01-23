@@ -24,7 +24,7 @@ public class KnapsackProblem {
 			}
 		}
 
-		// weight added in the sack.
+		// backtrack to get weight added in the sack.
 		int x = weight.length;
 		int y = W;
 		List<Integer> ans = new ArrayList<>();

@@ -21,7 +21,7 @@ public class SubSetSumProblem {
 				}
 			}
 		}
-		// subset whose sum add up to sum
+		// backtrack to get the subset whose sum add up to sum
 		int x = number.length;
 		int y = sum;
 		List<Integer> ans = new ArrayList<>();

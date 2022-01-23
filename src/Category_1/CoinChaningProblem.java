@@ -27,7 +27,7 @@ public class CoinChaningProblem {
 			}
 		}
 
-		// weight added in the sack.
+		// backtrack to get the required coins.
 		int x = coins.length;
 		int y = total;
 		List<Integer> ans = new ArrayList<>();
