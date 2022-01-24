@@ -1,6 +1,8 @@
 package Dynamic_Programming;
 
 import Category_2.EditDistanceProblem;
+import Category_3.LongestIncreasingSubsequence;
+import Category_4.LongestPalindromicSubsequence;
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -25,11 +27,20 @@ public class MainClass {
 //		CoinChaningProblem cc = new CoinChaningProblem();
 //		System.out.println(cc.coinChaningProblem(coins, total));
 
-		String str1 = "azced";
-		String str2 = "abcdef";
-		EditDistanceProblem editDistance = new EditDistanceProblem();
-		int result = editDistance.editDistance(str2.toCharArray(), str1.toCharArray());
-		System.out.println(result);
+//		String str1 = "azced";
+//		String str2 = "abcdef";
+//		EditDistanceProblem editDistance = new EditDistanceProblem();
+//		int result = editDistance.editDistance(str2.toCharArray(), str1.toCharArray());
+//		System.out.println(result);
+
+//		int arr[] = { 3, 4, -1, 0, 6, 2, 3 };
+//		int[] li = { 2, 5, 1, 8, 3 };
+//		LongestIncreasingSubsequence sub = new LongestIncreasingSubsequence();
+//		System.out.println(sub.LIS(li));
+
+		String str = "agbdba";
+		LongestPalindromicSubsequence lps = new LongestPalindromicSubsequence();
+		System.out.println(lps.LPS(str.toCharArray()));
 	}
 
 }
