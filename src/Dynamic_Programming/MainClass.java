@@ -1,5 +1,6 @@
 package Dynamic_Programming;
 
+import Category_1.RodCuttingProblem;
 import Category_2.EditDistanceProblem;
 import Category_3.LongestIncreasingSubsequence;
 import Category_4.LongestPalindromicSubsequence;
@@ -38,9 +39,14 @@ public class MainClass {
 //		LongestIncreasingSubsequence sub = new LongestIncreasingSubsequence();
 //		System.out.println(sub.LIS(li));
 
-		String str = "agbdba";
-		LongestPalindromicSubsequence lps = new LongestPalindromicSubsequence();
-		System.out.println(lps.LPS(str.toCharArray()));
+//		String str = "agbdba";
+//		LongestPalindromicSubsequence lps = new LongestPalindromicSubsequence();
+//		System.out.println(lps.LPS(str.toCharArray()));
+
+		int[] rodLenght = new int[] { 1, 2, 3, 4 };
+		int[] value = new int[] { 2, 5, 7, 8 };
+		RodCuttingProblem rodProblem = new RodCuttingProblem();
+		System.out.println(rodProblem.rodCuttingProblem(rodLenght, value, 5));
 	}
 
 }
