@@ -1,9 +1,6 @@
 package Dynamic_Programming;
 
-import Category_1.RodCuttingProblem;
-import Category_2.EditDistanceProblem;
-import Category_3.LongestIncreasingSubsequence;
-import Category_4.LongestPalindromicSubsequence;
+import Category_3.MininumJumpToReachEnd;
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -43,10 +40,15 @@ public class MainClass {
 //		LongestPalindromicSubsequence lps = new LongestPalindromicSubsequence();
 //		System.out.println(lps.LPS(str.toCharArray()));
 
-		int[] rodLenght = new int[] { 1, 2, 3, 4 };
-		int[] value = new int[] { 2, 5, 7, 8 };
-		RodCuttingProblem rodProblem = new RodCuttingProblem();
-		System.out.println(rodProblem.rodCuttingProblem(rodLenght, value, 5));
+//		int[] rodLenght = new int[] { 1, 2, 3, 4 };
+//		int[] value = new int[] { 2, 5, 7, 8 };
+//		RodCuttingProblem rodProblem = new RodCuttingProblem();
+//		System.out.println(rodProblem.rodCuttingProblem(rodLenght, value, 5));
+
+		int arr[] = { 2, 3, 1, 1, 2, 14, 2, 0, 1, 1 };
+		MininumJumpToReachEnd minJump = new MininumJumpToReachEnd();
+		System.out.println(minJump.minJump(arr));
+
 	}
 
 }
